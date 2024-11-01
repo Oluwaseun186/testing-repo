@@ -1,4 +1,4 @@
-name: CI # this is the name of the workflow
+name: main # this is the name of the workflow
 on:
   push:
     branches:
