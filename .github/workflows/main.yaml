@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Greet User
         run: |
-          echo "Welcome"
+          echo "Welcome users"
       - name: "Build the Image"
         env:
           image_name: test-image # Image name variable
