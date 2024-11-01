@@ -2,7 +2,7 @@ name: main # this is the name of the workflow
 on:
   push:
     branches:
-      - master
+      - origin
 jobs:
   Build:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
         env:
           image_name: test-image # Image name variable
           version: 1.0.0 # Image version variable
-          username: monyslim
+          username: oluwaseun7
         run: |
           docker build -t $username/$image_name:$version .
       - name: Create app_version.txt
