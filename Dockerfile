@@ -1,13 +1,3 @@
-FROM node:alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY  . .
-
-EXPOSE 3000
-
-CMD ["npm", "run""start"]
+FROM ngnix:alpine
+WORKDIR /usr/share/html
+COPY . /usr/share/nginx/html
