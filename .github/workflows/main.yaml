@@ -35,7 +35,7 @@ jobs:
       - name: Push Docker Image to Docker Hub
         env:
           image_name: test-image # Image name variable
-          version: 1.0.0 # Image version variable
+          version: 1.0.0 # Image version variable.
           username: oluwaseun7
         run: |
           docker push $username/$image_name:$version
