@@ -63,9 +63,4 @@ jobs:
         run: |
           docker pull $username/$image_name:$version
           docker run -d -p 808:80 $username/$image_name:$version
-      - name: Install rsync 📚
-        run: |
-         apt-get update && apt-get install -y rsync
-
-      - name: Deploy 🚀
-        uses: oluwaseun186/github-pages-deploy-action@v4
+    
