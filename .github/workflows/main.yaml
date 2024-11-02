@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "Version: $version" > app_version.txt
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3 # Updated to v3
+        uses: actions/upload-artifact@v4 # Updated to v3
         with:
           name: app_version # Change to a more generic name
           path: app_version.txt
@@ -46,7 +46,7 @@ jobs:
     needs: Build
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3 # Update to v3 for consistency
+        uses: actions/download-artifact@v4 # Update to v3 for consistency
         with:
           name: app_version # Match the name used in upload step
           path: .
