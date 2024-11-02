@@ -65,4 +65,6 @@ jobs:
           docker run -d -p 808:80 $username/$image_name:$version
       - name: Deploy to GitHub Pages
         uses: oluwaseun186/github-pages-deploy-action@v4
-    
+        with:
+          branch: origin
+          folder: .
