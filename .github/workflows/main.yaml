@@ -63,7 +63,6 @@ jobs:
         run: |
           docker pull $username/$image_name:$version
           docker run -d -p 808:80 $username/$image_name:$version
-      - name: Deploy 🚀
+      - name: Deploy to GitHub Pages
         uses: oluwaseun186/github-pages-deploy-action@v4
-        with:
-          folder: bode-profile # The folder the action should deploy.
+    
