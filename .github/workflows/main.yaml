@@ -67,4 +67,4 @@ jobs:
         uses: oluwaseun186/github-pages-deploy-action@v4
         with:
           branch: origin
-          folder: .
+          folder: /home/bimpe/Hudson
