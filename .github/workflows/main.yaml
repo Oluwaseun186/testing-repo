@@ -68,5 +68,5 @@ jobs:
           username: oluwaseun7
         run: |
           docker pull $username/$image_name:$version
-          docker run -d -p 808:80 $username/$image_name:${{ e,nv.APP_VERSION}}
+          docker run -d -p 808:80 $username/$image_name:${{ env.APP_VERSION}}
     
