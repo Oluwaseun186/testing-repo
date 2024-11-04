@@ -6,7 +6,7 @@ on:
 jobs:
   Build:
     name: instance-build
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/origin'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
