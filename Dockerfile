@@ -1,5 +1,6 @@
-#FROM alpine AS builder
-FROM test-image:$APP_VERSION-alpine
+FROM nginx AS builder
+
+#FROM nginx:alpine
 
 WORKDIR /usr/share/html
 
