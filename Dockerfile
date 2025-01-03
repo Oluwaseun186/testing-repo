@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM alpine AS builder
 
 WORKDIR /usr/share/html
 
