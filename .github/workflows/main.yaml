@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: Build
     steps:
-      - name: Download artifact
+      - name: "Download artifact"
         uses: actions/download-artifact@v4 # Update to v3 for consistency
         with:
           name: app_version # Match the name used in upload step
