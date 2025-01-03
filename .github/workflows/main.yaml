@@ -51,7 +51,7 @@ jobs:
           path: app_version.txt
 
   Deploy:
-    name: "Deploy Docker Image."
+    name: "Deploy Docker Image"
     runs-on: ubuntu-latest
     needs: Build
     steps:
